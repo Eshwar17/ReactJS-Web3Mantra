@@ -1,11 +1,12 @@
 import './App.css';
-import { Header, Footer } from './Header';
+import Student from './components/Student';
 function App() {
-  const msg = <h1>I am Eshwar</h1>;
   return (
     <div className="App">
-      <Header />
-      <Footer />
+      <Student name="Eshwar" age={23}/>
+      <Student name="Charishma" age={23}/>
+      <Student name="Cherry" age={23}/>
+      <Student name="Eshu" age={23}/>
     </div>
   );
 }
