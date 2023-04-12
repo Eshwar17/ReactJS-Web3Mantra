@@ -2,21 +2,12 @@
 import './App.css';
 
 function App() {
+  const msg = <h1>I am Eshwar</h1>;
   return (
     <div className="App">
       <header className="App-header">
-  
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      {msg}
+      <h3>We can use JavaScript directly using curly braces <span style={{color: 'blue'}}>{34 + 45}</span></h3>
       </header>
     </div>
   );
