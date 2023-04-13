@@ -1,10 +1,7 @@
-import Footer from "./Footer";
-
 const Header = () => {
     return(
         <div className="header">
-        <h1>Header</h1>
-        <Footer />
+        <h1 style={{background: "Black",color: 'white', padding:'10px', margin: '10px'}}>UseState Hook</h1>
         </div>
     )
 }

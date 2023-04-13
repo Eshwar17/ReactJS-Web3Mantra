@@ -13,3 +13,10 @@
   background-color: brown;
   color: black;
 }
+.heading {
+  font-size: 9rem;
+}
+button {
+  margin: 1rem;
+  padding:1rem;
+}
