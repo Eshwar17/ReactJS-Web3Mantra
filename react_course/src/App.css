@@ -20,3 +20,8 @@ button {
   margin: 1rem;
   padding:1rem;
 }
+.data {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
