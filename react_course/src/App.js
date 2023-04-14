@@ -5,16 +5,22 @@ import Header from './components/Header';
 
 function App() {
 
-  const [state, setState] = useState(0);
-
+  const [state, setState] = useState(10);
+  const [data, setData] = useState([]);
   useEffect(() => {
-    console.log("UseEffect called")
+    async function getData() {
+      const get = await fetch(`https://hub.dummyapis.com/employee?noofRecords=${state}&idStarts=1001`);
+      const res = await get.json();
+      setData(res);
+      console.log(res);
+    }
+    getData();
   }, [state]) 
 
 // [] -> useEffect will be called only once i.e, at the beginning of the rendering
 //We can add dependencies by separating them with commas
 
-  console.log("Fn body called")
+  // console.log("Fn body called")
 
   return (
     <div className="App">
