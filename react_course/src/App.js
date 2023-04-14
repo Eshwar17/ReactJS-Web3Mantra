@@ -38,7 +38,7 @@ function App() {
           )
         })
       }
-      <button className='loadmore' onClick={() => setState(state+10)}>Load More {state}</button>
+      <button onClick={() => setState(state+10)}>Load More {state}</button>
     </div>
   );
 }
