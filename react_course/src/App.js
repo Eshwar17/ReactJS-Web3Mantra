@@ -13,6 +13,7 @@ import About from "./components/About";
 import Error from "./components/Error";
 import Insta from "./components/Insta";
 import Mail from "./components/Mail";
+import UserDetails from "./components/UserDetails";
 
 function App() {
   // [] -> useEffect will be called only once i.e, at the beginning of the rendering
@@ -58,7 +59,8 @@ function App() {
           </ul>
         </nav>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/:id" element={<UserDetails />} />
 
           <Route path="/about" element={<About />} />
 
