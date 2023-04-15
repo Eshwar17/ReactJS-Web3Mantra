@@ -6,7 +6,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  NavLink
+  NavLink,
 } from "react-router-dom";
 import Contact from './components/Contact';
 import About from './components/About';
