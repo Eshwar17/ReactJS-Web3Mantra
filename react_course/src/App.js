@@ -11,6 +11,8 @@ import {
 import Contact from './components/Contact';
 import About from './components/About';
 import Error from './components/Error';
+import Insta from './components/Insta';
+import Mail from './components/Mail';
 
 function App() {
 
@@ -52,9 +54,14 @@ function App() {
            
           <Route path="/about" element={<About />} />
             
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Contact />} >
+          <Route path='insta' element={<Insta />}/>
+            <Route path='mail' element={<Mail />}/>
+          </Route>
 
-          <Route path='*' element={<Error />} />
+          <Route path='*' element={<Error />}>
+            
+          </Route>
             
         </Routes>
       </div>
