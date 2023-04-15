@@ -6,7 +6,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  NavLink
 } from "react-router-dom";
 import Contact from './components/Contact';
 import About from './components/About';
@@ -20,21 +20,30 @@ function App() {
 //We can add dependencies by separating them with commas
 
   // console.log("Fn body called")
+  const navLinkStyles = ({isActive}) => {
+    return {
+      color: isActive ? 'red' : 'black',
+      fontSize: '25px',
+      textDecoration: isActive ? 'underline' : 'none'
+    }
+
+  }
 
   return (
     <Router>
       <div className="App">
         <Header />
         <nav>
-          <ul style={{display: 'flex', justifyContent: 'space-between', padding:'0 2rem'}}>
+          <ul style={{backgroundColor:'white',display: 'flex', justifyContent: 'space-between', padding:'0 2rem'}}>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink style={navLinkStyles} to="/">Home</NavLink>
+
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <NavLink style={navLinkStyles} to="/about">About</NavLink>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <NavLink style={navLinkStyles} to="/contact">Contact</NavLink>
             </li>
           </ul>
         </nav>
