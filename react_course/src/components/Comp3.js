@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { AppState } from '../App'
 
 const Comp3 = () => {
+    const appData = useContext(AppState)
   return (
     <div className='comp3'>
     <div>Comp3</div>
-    <h1>noData</h1>
+    <h1>{appData}</h1>
     </div>
   )
 }
