@@ -25,3 +25,8 @@ button {
   justify-content: space-around;
   padding: 15px;
 }
+.comp3 {
+  width: 80%;
+  background-color: rgb(192, 184, 184);
+  border: 2px solid black;
+}

@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Header />
-      <Comp1 />
+      <Comp1 data={data}/>
     </>
   );
 }
